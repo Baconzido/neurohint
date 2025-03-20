@@ -19,7 +19,7 @@
     width: 50%;
 }
 
-#feedbacks {
+#feedbacks, #desenvolvedores {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -44,6 +44,11 @@
     object-fit: cover;
 }
 
+.feedback-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
 .feedback-content p {
     display: flex;
     justify-content: space-between;

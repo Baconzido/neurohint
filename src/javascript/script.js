@@ -1,3 +1,34 @@
+equipeDesenvolvimento = [
+    {
+        nome: 'Vitória Teixeira',
+        funcao: 'Front-end'
+    }, 
+    {
+        nome: 'Felipe Rodrigues',
+        funcao: 'Front-end'
+    }, 
+    {
+        nome: 'Guilherme Trindade',
+        funcao: 'Back-end'
+    }, 
+    {
+        nome: 'Nicolas Vieira',
+        funcao: 'Back-end'
+    }, 
+    {
+        nome: 'Kaylane Batista',
+        funcao: 'Back-end'
+    }, 
+    {
+        nome: 'Samuel Santana',
+        funcao: 'Back-end'
+    }, 
+    {
+        nome: 'João Paulo',
+        funcao: 'Back-end'
+    }
+]
+
 $(document).ready(function() {
     $('#mobile_btn').on('click', function () {
         $('#mobile_menu').toggleClass('active');
@@ -6,6 +37,7 @@ $(document).ready(function() {
 
     const sections = $('section');
     const navItems = $('.nav-item');
+    const devContainer = $('#desenvolvedores');
 
     $(window).on('scroll', function () {
         const header = $('header');
@@ -57,4 +89,21 @@ $(document).ready(function() {
         duration: 1000,
         distance: '20%'
     })
+
+    equipeDesenvolvimento.forEach(membro => {
+        const devHTML = `
+            <div class="feedback">
+                <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+                <div class="feedback-content">
+                    <h3>${membro.nome}</h3>
+                    <p>
+                        <span>${membro.funcao}</span>
+                    </p>
+                    
+                </div>
+            </div>
+        `;
+
+        devContainer.append(devHTML);
+    });
 });

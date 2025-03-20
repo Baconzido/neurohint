@@ -38,6 +38,7 @@ section {
 }
 
 .btn-default {
+    color: #fff;
     border: none;
     display: flex;
     align-items: center;
