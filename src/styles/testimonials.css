@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 48px;
+    text-align: center;
 }
 
 #testimonial_chef {
@@ -16,15 +17,16 @@
 }
 
 #testimonials_content {
-    width: 50%;
+    width: 80%;
 }
 
-#feedbacks, #desenvolvedores {
+#desenvolvedores, #orientadores, #especialistas {
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-bottom: 40px;
     margin-top: 30px;
+    text-align: start;
 }
 
 .feedback {

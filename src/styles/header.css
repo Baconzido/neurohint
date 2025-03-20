@@ -36,6 +36,15 @@ header {
     border-bottom: 3px solid var(--color-primary-4);
 }
 
+.contato{
+    color: #fff;
+}
+
+#downloads.active a {
+    color: var(--color-neutral-1);
+    border-bottom: 3px solid var(--color-primary-4);
+}
+
 #mobile_btn {
     display: none;
 }

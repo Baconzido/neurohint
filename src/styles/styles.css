@@ -4,9 +4,10 @@
 @import url('menu.css');
 @import url('testimonials.css');
 @import url('footer.css');
+@import url('contact.css');
 
 :root {
-    --color-primary-1: #E6F4F9; 
+    --color-primary-1: #c5e9f7e0; 
     --color-primary-2: #B3D6E3; 
     --color-primary-3: #80BACC; 
     --color-primary-4: #4D9EB6; 
@@ -35,6 +36,14 @@ body {
 
 section {
     padding: 28px 8%;
+}
+
+h4 {
+    font-weight: 500;
+}
+
+.description {
+    width: 80%;
 }
 
 .btn-default {
@@ -88,3 +97,9 @@ section {
 .section-subtitle {
     font-size: 2.1875rem;
 } 
+
+@media screen and (max-width: 450px) {
+    .description {
+        width: 90%;
+    }
+}

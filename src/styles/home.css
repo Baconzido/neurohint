@@ -38,19 +38,18 @@
     justify-content: center;
     gap: 28px;
     margin-top: 5%;
-    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
 }
 
 #cta .title {
     font-size: 4rem;
-    color: var(--color-neutral-1);
+    color: var(--color-neutral-0);
     text-align: center;
 }
 
 #cta .title span {
-    color: var(--color-primary-6);
+    color: var(--color-primary-1);
 }
 
 #cta .description {
@@ -128,5 +127,13 @@
 @media screen and (max-width: 450px) {
     #phone_button button {
         display: none;
+    }
+
+    #cta {
+        width: 90%;
+
+        .title{
+            font-size: 2rem;
+        }
     }
 }
