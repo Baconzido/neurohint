@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    padding: 28px 8%;
+    padding: 19px 8%;
     position: sticky;
     top: 0;
     background-color: var(--color-primary-1);
@@ -15,14 +15,22 @@ header {
 }
 
 #nav_logo {
+    font-family: 'Cantata One', sans-serif;
     font-size: 24px;
     color: var(--color-primary-6);
+    margin-left: 10px;
 }
 
 #nav_list {
     display: flex;
     list-style: none;
     gap: 48px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .nav-item a {
