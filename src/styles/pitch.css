@@ -1,0 +1,14 @@
+
+#pitch{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.video{
+    video{
+       width: 90%;
+        height: 400px; 
+    }
+}

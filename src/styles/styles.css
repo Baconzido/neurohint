@@ -6,6 +6,8 @@
 @import url('testimonials.css');
 @import url('footer.css');
 @import url('contact.css');
+@import url('pitch.css');
+@import url('diferenciais.css');
 
 :root {
     --color-primary-1: #c5e9f7e0; 

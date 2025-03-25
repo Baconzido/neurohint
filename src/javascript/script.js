@@ -32,37 +32,37 @@ equipeDesenvolvimento = [
     {
         nome: 'João Paulo',
         funcao: 'Back-end',
-        imagem: 'src/images/logo_dcomp.png'
+        imagem: 'src/images/imagem-joao-paulo.jpg'
     }
 ]
 
 equipeOrientadores = [
     {
-        nome: 'Débora Maria Coelho Nascimento',
+        nome: 'Dra. Débora Maria Coelho Nascimento',
         imagem: 'src/images/imagem-debora.jpg'
     },
     {
-        nome: 'Ricardo José Paiva de Britto Salgueiro',
+        nome: 'Dr. Ricardo José Paiva de Britto Salgueiro',
         imagem: 'src/images/imagem-ricardo.jpg'
     },
     {
-        nome: 'Edilayne Meneses Salgueiro',
+        nome: 'Dra. Edilayne Meneses Salgueiro',
         imagem: 'src/images/imagem-edilayne.jpg'
     },
     {
-        nome: 'Rogério Patrício Chagas do Nascimento',
-        imagem: 'src/images/logo_dcomp.png'
+        nome: 'Dr. Rogério Patrício Chagas do Nascimento',
+        imagem: 'src/images/imagem-rogerio.jpeg'
     }
 ]
 
 equipeEspecialistas = [
     {
-        nome: 'José Aislan Correia Santos',
-        imagem: 'src/images/logo_dcomp.png'
+        nome: 'Esp. José Aislan Correia Santos',
+        imagem: 'src/images/imagem-aislan.jpg'
     },
     {
-        nome: 'Karina Conceição Gomes Machado de Araújo',
-        imagem: 'src/images/logo_dcomp.png'
+        nome: 'Dra. Karina Conceição Gomes Machado de Araújo',
+        imagem: 'src/images/imagem-karina.jpeg'
     }
 ]
 
@@ -78,6 +78,11 @@ $(document).ready(function() {
     const oriendatoresContainer = $('#orientadores');
     const especialistasContainer = $('#especialistas');
     let isScrolling = false;
+
+    equipeDesenvolvimento.sort((a, b) => a.nome.localeCompare(b.nome));
+    equipeOrientadores.sort((a, b) => a.nome.localeCompare(b.nome));
+    equipeEspecialistas.sort((a, b) => a.nome.localeCompare(b.nome));
+
 
     function updateActiveSection() {
         if (isScrolling) return;
@@ -96,7 +101,7 @@ $(document).ready(function() {
         });
     
         if ($(window).scrollTop() + $(window).height() >= $(document).height() - 10) {
-            activeSectionIndex = sections.length - 1; // Garante que "Downloads" seja ativado no final
+            activeSectionIndex = sections.length - 1;
         }
     
         navItems.removeClass('active');
