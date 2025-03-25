@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-.carrossel-css {
+.carrossel-diferenciais {
   width: 90%;
   position: relative;
   margin: 0 auto;
@@ -14,7 +14,7 @@
   overflow: hidden;
 }
 
-.carrossel-css input[type="radio"] {
+.carrossel-diferenciais input[type="radio"] {
   display: none;
 }
 
@@ -57,7 +57,6 @@
   transform: translateX(-200%);
 }
 
-/* Bolinhas */
 .nav-carousel {
   display: flex;
   justify-content: center;
@@ -78,7 +77,6 @@
   background: #1a82a0;
 }
 
-/* Setas */
 .nav-arrows {
   position: absolute;
   top: 40%;
@@ -114,7 +112,6 @@
   padding-left: 2px;
 }
 
-/* Mostrar apenas as setas relevantes para o slide atual */
 .nav-arrows label {
   display: none;
 }
@@ -123,4 +120,13 @@
 #slide2:checked ~ .nav-arrows label.s2,
 #slide3:checked ~ .nav-arrows label.s3 {
   display: block;
+}
+
+@media screen and (max-width: 450px) {
+  .carrossel-diferenciais{
+    width: 60%;
+  }
+  .arrow.next {
+    right: 10%
+  }
 }
