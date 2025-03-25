@@ -42,13 +42,14 @@ equipeOrientadores = [
         imagem: 'src/images/imagem-debora.jpg'
     },
     {
-        nome: 'Dr. Ricardo José Paiva de Britto Salgueiro',
-        imagem: 'src/images/imagem-ricardo.jpg'
-    },
-    {
         nome: 'Dra. Edilayne Meneses Salgueiro',
         imagem: 'src/images/imagem-edilayne.jpg'
     },
+    {
+        nome: 'Dr. Ricardo José Paiva de Britto Salgueiro',
+        imagem: 'src/images/imagem-ricardo.jpg'
+    },
+    
     {
         nome: 'Dr. Rogério Patrício Chagas do Nascimento',
         imagem: 'src/images/imagem-rogerio.jpeg'
@@ -80,8 +81,8 @@ $(document).ready(function() {
     let isScrolling = false;
 
     equipeDesenvolvimento.sort((a, b) => a.nome.localeCompare(b.nome));
-    equipeOrientadores.sort((a, b) => a.nome.localeCompare(b.nome));
-    equipeEspecialistas.sort((a, b) => a.nome.localeCompare(b.nome));
+   // equipeOrientadores.sort((a, b) => a.nome.localeCompare(b.nome));
+   // equipeEspecialistas.sort((a, b) => a.nome.localeCompare(b.nome));
 
 
     function updateActiveSection() {

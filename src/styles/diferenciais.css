@@ -6,6 +6,7 @@
     text-align: center;
 }
 
+
 .carrossel-diferenciais {
   width: 80%;
   position: relative;
@@ -122,6 +123,11 @@
   display: block;
 }
 
+@media screen and (max-width: 900px) {
+  .carrossel-diferenciais{
+    width: 60%;
+  }
+}
 @media screen and (max-width: 450px) {
   .carrossel-diferenciais{
     width: 60%;
