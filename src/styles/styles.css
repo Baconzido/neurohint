@@ -41,6 +41,10 @@ section {
     padding: 28px 8%;
 }
 
+h3 {
+    color: #1a82a0;
+}
+
 h4 {
     font-weight: 500;
 }

@@ -145,6 +145,7 @@
   }
 
   .coluna-diferenciais{
+    margin-top: 12px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -153,11 +154,28 @@
   }
 
   .c-slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: var(--color-neutral-0);
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
     width: 100%; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 18px;
+
+    h4 {
+      font-weight: 300;
+    }
+
     img {
       width: 230px;
     }
