@@ -171,14 +171,38 @@ $(document).ready(function() {
         distance: '20%'
     });
 
-    ScrollReveal().reveal('#testimonial_chef', {
+    ScrollReveal().reveal('#testimonials_content', {
         origin: 'left',
         duration: 1000,
         distance: '20%'
     })
 
     ScrollReveal().reveal('.feedback', {
-        origin: 'right',
+        origin: 'left',
+        duration: 1000,
+        distance: '20%'
+    })
+
+    ScrollReveal().reveal('.c-slide', {
+        origin: 'left',
+        duration: 1000,
+        distance: '20%'
+    })
+
+    ScrollReveal().reveal('#diferenciais_content', {
+        origin: 'left',
+        duration: 1000,
+        distance: '20%'
+    })
+    
+    ScrollReveal().reveal('#pitch', {
+        origin: 'left',
+        duration: 1000,
+        distance: '20%'
+    })
+
+    ScrollReveal().reveal('#contato', {
+        origin: 'left',
         duration: 1000,
         distance: '20%'
     })

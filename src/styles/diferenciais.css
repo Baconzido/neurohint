@@ -123,15 +123,46 @@
   display: block;
 }
 
-@media screen and (max-width: 900px) {
+.coluna-diferenciais {
+  display: none;
+}
+
+@media screen and (max-width: 1500px) {
   .carrossel-diferenciais{
     width: 60%;
   }
 }
-@media screen and (max-width: 450px) {
+
+@media screen and (max-width: 800px) {
   .carrossel-diferenciais{
-    width: 60%;
+    width: 38%;
   }
+}
+
+@media screen and (max-width: 500px) {
+  .carrossel-diferenciais{
+    display: none;
+  }
+
+  .coluna-diferenciais{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .c-slide{
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 230px;
+    }
+  }
+
   .arrow.next {
     right: 10%
   }
